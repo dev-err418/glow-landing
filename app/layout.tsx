@@ -8,7 +8,7 @@ const uncutSans = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Glow - Your pocket companion",
+  title: "Glow - Your daily light",
   description: "Daily warmth when everything feels cold",
 };
 
