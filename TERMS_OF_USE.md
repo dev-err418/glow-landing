@@ -212,13 +212,13 @@ The App is controlled and operated from France and is primarily intended for use
 
 We strive to make the App accessible to all users. If you experience any difficulty accessing any part of the App, please contact us and we will work with you to provide the information or service you seek through an alternative communication method.
 
-## 26. Feedback
+## 16. Feedback
 
 We welcome feedback, comments, and suggestions for improvements to the App ("Feedback"). You acknowledge and agree that if you submit Feedback, we may use it without restriction or compensation to you, and you hereby grant us a perpetual, irrevocable, worldwide, royalty-free license to use, modify, and incorporate such Feedback into our products and services.
 
-## 27. Apple and Google specific terms
+## 17. Apple and Google specific terms
 
-### 27.1 App Store terms
+### 17.1 App Store terms
 
 If you access the App via Apple's App Store, you acknowledge that:
 
@@ -227,15 +227,11 @@ If you access the App via Apple's App Store, you acknowledge that:
 - Apple is not responsible for addressing any claims relating to the App
 - Apple is a third-party beneficiary of these Terms and may enforce them
 
-### 27.2 Google Play terms
+### 17.2 Google Play terms
 
 If you access the App via Google Play, you agree to Google Play's Terms of Service, which can be found at https://play.google.com/intl/en_us/about/play-terms/
 
-## 28. U.S. government end users
-
-If you are a U.S. government end user, the App is a "Commercial Item" as defined in FAR 2.101, consisting of "Commercial Computer Software" and "Commercial Computer Software Documentation" as used in FAR 12.212 and DFARS 227.7202, as applicable. Use, reproduction, and disclosure are subject to the terms of these Terms.
-
-## 29. Contact information
+## 18. Contact information
 
 For questions, concerns, or notices regarding these Terms, please contact us at:
 
@@ -248,7 +244,7 @@ For questions, concerns, or notices regarding these Terms, please contact us at:
 
 For EU consumers exercising their legal rights, please clearly indicate the nature of your request in the subject line.
 
-## 30. Acknowledgment
+## 19. Acknowledgment
 
 BY USING THE APP, YOU ACKNOWLEDGE THAT YOU HAVE READ THESE TERMS OF USE, UNDERSTAND THEM, AND AGREE TO BE BOUND BY THEM. IF YOU DO NOT AGREE TO THESE TERMS, YOU MUST NOT ACCESS OR USE THE APP.
 

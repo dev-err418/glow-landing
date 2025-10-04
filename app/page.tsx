@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Hero Section */}
-      <section className="max-w-5xl mx-auto px-6 py-12 lg:py-20">
+      <section className="min-h-screen flex items-center max-w-5xl mx-auto px-6 py-12 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Column - Content */}
           <div className="space-y-8 lg:space-y-10 text-center lg:text-left">
