@@ -1,6 +1,17 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
+  const [isAnimating, setIsAnimating] = useState(false);
+  const [isReading, setIsReading] = useState(false);
+
+  const handleMascotClick = () => {
+    setIsAnimating(true);
+    setIsReading(!isReading);
+    setTimeout(() => setIsAnimating(false), 600);
+  };
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Hero Section */}
@@ -133,14 +144,26 @@ export default function Home() {
       </section>
 
       {/* Floating Mascot - Bottom Left */}
-      <div className="fixed -bottom-10 -left-10 rotate-10 w-32 lg:w-48 pointer-events-none z-10">
-        <Image
-          src="/mascot-alone.png"
-          alt="Glow Mascot"
-          width={200}
-          height={200}
-          className="w-full h-auto"
-        />
+      <div
+        className={`fixed -bottom-10 -left-10 w-32 lg:w-48 cursor-pointer z-10 ${isAnimating ? 'animate-mascot-wiggle' : 'mascot-base'}`}
+        onClick={handleMascotClick}
+      >
+        <div className="relative w-full h-full">
+          <Image
+            src="/mascot-alone.png"
+            alt="Glow Mascot"
+            width={200}
+            height={200}
+            className={`w-full h-auto transition-opacity duration-300 ${isReading ? 'opacity-0' : 'opacity-100'}`}
+          />
+          <Image
+            src="/mascot-alone-reading.png"
+            alt="Glow Mascot Reading"
+            width={200}
+            height={200}
+            className={`w-full h-auto absolute top-0 left-0 transition-opacity duration-300 ${isReading ? 'opacity-100' : 'opacity-0'}`}
+          />
+        </div>
       </div>
     </div>
   );
