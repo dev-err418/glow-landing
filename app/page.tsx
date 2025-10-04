@@ -7,9 +7,9 @@ export default function Home() {
       <section className="max-w-5xl mx-auto px-6 py-12 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Column - Content */}
-          <div className="space-y-8 lg:space-y-10">
+          <div className="space-y-8 lg:space-y-10 text-center lg:text-left">
             {/* Logo and Brand */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 justify-center lg:justify-start">
               <Image
                 src="/icon.png"
                 alt="Glow Icon"
@@ -33,7 +33,7 @@ export default function Home() {
             {/* Download Button */}
             <a
               href="#"
-              className="inline-flex items-center gap-3 bg-primary hover:bg-primary/90 text-white font-semibold px-8 py-4 rounded-full transition-all shadow-lg hover:shadow-xl"
+              className="flex w-full justify-center lg:inline-flex lg:w-auto items-center gap-3 bg-primary hover:bg-primary/90 text-white font-semibold px-8 py-4 rounded-full transition-all shadow-lg hover:shadow-xl"
             >
               <svg
                 className="w-6 h-6"
@@ -63,19 +63,22 @@ export default function Home() {
       <section className="max-w-5xl mx-auto px-6 py-16 lg:py-24">
         <div className="mb-12">
           <h3 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            The basics, but better
+            Simple by design
           </h3>
+          <p className="text-xl text-foreground/70">
+            Simple features designed to actually fit into your life
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-6 items-stretch">
+        <div className="grid md:grid-cols-3 gap-8 lg:gap-6 items-stretch grid-rows-[1fr_auto_auto]">
           {/* Widgets Card */}
-          <div className="space-y-4 flex flex-col">
-            <div className="relative bg-white rounded-3xl overflow-hidden flex flex-col justify-between h-full shadow-[0_0_20px_rgba(0,0,0,0.08)] gap-4">
+          <div className="grid grid-rows-subgrid row-span-3 gap-4">
+            <div className="relative bg-white rounded-3xl overflow-hidden flex flex-col justify-between shadow-[0_0_20px_rgba(0,0,0,0.08)] gap-4">
               <div className="px-6 pt-4">
                 <img
                   src="/large-widget.png"
                   alt="Large Widget"
-                  className="w-full h-auto rounded-4xl shadow-md"
+                  className="w-full h-auto rounded-[55px] shadow-md"
                 />
               </div>
               <div className="px-6">
@@ -86,35 +89,44 @@ export default function Home() {
                 />
               </div>
             </div>
-            <h4 className="text-2xl font-bold text-foreground">Widgets</h4>
+            <h4 className="text-2xl font-bold text-foreground mt-2">Widgets</h4>
             <p className="text-foreground/70">
-              Stay updated with beautiful home screen widgets
+            Add quotes directly to your home screen. New wisdom every hour, no need to open the app. 
             </p>
           </div>
 
           {/* Daily Reminders Card */}
-          <div className="space-y-4 flex flex-col">
-            <div className="relative bg-white rounded-3xl overflow-hidden flex items-start justify-center h-full px-4 pb-4 shadow-[0_0_20px_rgba(0,0,0,0.08)]">
-              <img
-                src="/notifications.png"
-                alt="Notifications"
-                className="w-full h-auto"
-              />
+          <div className="grid grid-rows-subgrid row-span-3 gap-4">
+            <div className="relative bg-white rounded-3xl overflow-hidden flex items-start justify-center shadow-[0_0_20px_rgba(0,0,0,0.08)]">
+              <div className="px-12 pb-8">
+
+                <img
+                  src="/notifications.png"
+                  alt="Notifications"
+                  className="w-full h-auto"
+                />
+              </div>
             </div>
-            <h4 className="text-2xl font-bold text-foreground">Daily Reminders</h4>
+            <h4 className="text-2xl font-bold text-foreground mt-2">Gentle nudges</h4>
             <p className="text-foreground/70">
-              Stay on track with helpful notifications
+            Choose when you need support most. Your schedule, your timing.
             </p>
           </div>
 
           {/* Categories Card */}
-          <div className="space-y-4 flex flex-col">
-            <div className="aspect-square relative bg-white rounded-3xl flex items-center justify-center h-full shadow-[0_0_20px_rgba(0,0,0,0.08)]">
-              <div className="text-6xl">📊</div>
+          <div className="grid grid-rows-subgrid row-span-3 gap-4">
+            <div className="relative bg-white rounded-3xl overflow-hidden flex flex-col justify-end shadow-[0_0_20px_rgba(0,0,0,0.08)]">
+              <div className="px-12 pt-8">
+                <img
+                  src="/categories.png"
+                  alt="Categories"
+                  className="w-full h-auto"
+                />
+              </div>
             </div>
-            <h4 className="text-2xl font-bold text-foreground">Categories</h4>
+            <h4 className="text-2xl font-bold text-foreground mt-2">Categories</h4>
             <p className="text-foreground/70">
-              Organize your expenses with custom categories
+            Pick from unique categories for focused support. Or blend multiple categories together to create your perfect mix.
             </p>
           </div>
         </div>
