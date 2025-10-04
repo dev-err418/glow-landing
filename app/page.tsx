@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -89,7 +90,7 @@ export default function Home() {
                 <img
                   src="/large-widget.png"
                   alt="Large Widget"
-                  className="w-full h-auto rounded-[55px] shadow-md"
+                  className="w-full h-auto rounded-[5rem] md:rounded-[2rem] shadow-md"
                 />
               </div>
               <div className="px-6">
@@ -165,6 +166,9 @@ export default function Home() {
           />
         </div>
       </div>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
